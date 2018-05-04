@@ -1,0 +1,377 @@
+@-ms-viewport{
+    width:device-width
+}
+html{
+    box-sizing:border-box;
+    -ms-overflow-style:scrollbar
+}
+*,::after,::before{
+    box-sizing:inherit
+}
+
+html,body {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+hr {
+	width: 420px;
+	color: #718093;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.parallax {
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: #5352ed;
+	transition: all .2s ease-in;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #192a56;
+	transition: all .2s ease-in;
+}
+
+/* Navbar */
+
+#navbar {
+	position: sticky;
+	top: 0;
+	z-index:1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .2s ease-in;
+    box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.10);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #34495e;
+    text-align: center;
+    padding: 24px 26px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #3498db;
+    transition: all .2s ease-in;
+}
+
+.active {
+    color: #3498db;
+}
+
+/* End Navbar */
+
+#head {
+	background-image: url("https://i.imgur.com/9GkIEjN.png");
+	margin: 0;
+	padding: 200px;
+	text-align: center;
+	color: white;
+}
+
+#head h1 {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#head h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#about {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#about h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#about .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#about .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#about h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#about p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#banner {
+	background-image: url("https://i.imgur.com/XL2PAd3.png");
+	padding: 75px;
+	text-align: center;
+}
+
+#banner2 {
+	background-image: url("https://i.imgur.com/8P27W9N.png");
+	padding: 75px;
+	text-align: center;
+}
+
+#banner3 {
+	background-image: url("https://i.imgur.com/MljFIMA.png");
+	padding: 75px;
+	text-align: center;
+}
+
+#banner h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#banner2 h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner2 h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#banner3 h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner3 h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#staff {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#staff h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#staff h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#staff p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#staff .stafflist {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#staff .staffblock {
+	transform: none;
+	transition: all .2s ease-in;
+}
+
+#staff .staffblock:hover {
+	transform: scale(1.1,1.1);
+	transition: all .2s ease-in;
+}
+
+#gamemodes {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#gamemodes h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#gamemodes h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#gamemodes p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#gamemodes .gray {
+	background-color: #ecf0f1;
+    padding: 0;
+    margin: -10px;
+}
+
+#gamemodes .mode {
+	margin: 15px;
+	text-align: left;
+	padding: 50px;
+	max-width: 1500px;
+}
+
+#gamemodes .mode-inv {
+	margin: 15px;
+	text-align: right;
+	max-width: 1500px
+}
+
+#gamemodes .img {
+	margin: 15px;
+	padding: 50px;
+	max-width: 1500px
+}
+
+#gamemodes .fixed-width {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+#vote {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#vote h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#vote h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#vote p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#vote .votelist {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#vote .voteblock {
+	transform: none;
+	transition: all .2s ease-in;
+}
+
+.voteblock a {
+	font-weight: 700;
+}
+
+
+footer {
+	background-color: #11171e;
+	color: white;
+}
+
+.footer {
+	max-width: 1280px;
+	margin: 0 auto;
+	float: none;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+.copyright-notice {
+	color: #30343a;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: default;
+}
+
+.copyright-notice:hover {
+	color: white;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+}
