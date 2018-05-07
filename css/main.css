@@ -73,6 +73,12 @@ ul {
     box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.10);
 }
 
+ul .max-width {
+	max-width: 1280px;
+	margin: 0 auto;
+	box-shadow: none;
+}
+
 li {
     float: left;
 }
@@ -283,23 +289,23 @@ li a:hover {
 	margin: 15px;
 	text-align: left;
 	padding: 50px;
-	max-width: 1500px;
+	max-width: 1280px;
 }
 
 #gamemodes .mode-inv {
 	margin: 15px;
 	text-align: right;
-	max-width: 1500px
+	max-width: 1280px
 }
 
 #gamemodes .img {
 	margin: 15px;
 	padding: 50px;
-	max-width: 1500px
+	max-width: 1280px
 }
 
 #gamemodes .fixed-width {
-	max-width: 1500px;
+	max-width: 1280px;
 	margin: 0 auto;
 }
 
