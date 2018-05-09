@@ -44,15 +44,16 @@
 <body>
 	
 	<!-- Navbar -->
-	<ul class="nav" id="navbar">
-		<ul class="max-width">
-		  <li><a href="#head">Home</a></li>
-		  <li><a href="#about">About</a></li>
-		  <li><a href="#gamemodes">Gamemodes</a></li>
-		  <li><a href="#vote">Vote</a></li>
-		  <li><a href="#staff">Staff</a></li>
-		</ul>
-	</ul>
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+			  <a href="#head">Home</a>
+			  <a href="#about">About</a>
+			  <a href="#gamemodes">Gamemodes</a>
+			  <a href="#vote">Vote</a>
+			  <a href="#staff">Staff</a>
+		  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
 	<!-- End Navbar -->
 
 	<!-- Header (Banner) -->
@@ -125,13 +126,13 @@
 		<hr>
 		<!-- First Gamemode -->
 		<div class="row fixed-width">
-			<div class="col mode">
+			<div class="col-md mode">
 				<h2>SURVIVAL</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elementum justo. Morbi in venenatis dui. Mauris quis efficitur orci, ut venenatis massa. Pellentesque gravida ante sit amet condimentum tristique. Suspendisse at gravida nunc, mattis sagittis velit. Pellentesque molestie mauris risus, et elementum metus mattis sit amet. Aliquam id ex ac augue tempor convallis. Nunc id consequat nibh. Suspendisse rhoncus nulla at nisl egestas vulputate vel vitae ex. In est nibh, tempus vitae ipsum vel, eleifend dictum diam. Ut dapibus massa sed turpis dictum pretium. Mauris tempus sapien sit amet turpis sodales, sit amet sollicitudin augue tincidunt. Donec ullamcorper suscipit laoreet.</p>
 			</div>
 			<!-- Gamemode Image -->
-			<div class="col img">
-				<img width="480" src="https://via.placeholder.com/1920x1080">
+			<div class="col-md img">
+				<img class="res-img" src="https://via.placeholder.com/1920x1080">
 			</div>
 			<!-- End Gamemode Image -->
 		</div>
@@ -140,11 +141,11 @@
 			<!-- Second Gamemode -->
 			<div class="row fixed-width">
 				<!-- Image Second Gamemode -->
-				<div class="col img">
-					<img width="480" src="https://via.placeholder.com/1920x1080">
-				</div>
+					<div class="col-md img">
+						<img class="res-img" src="https://via.placeholder.com/1920x1080">
+					</div>
 				<!-- End Image Second Gamemode -->
-				<div class="col mode">
+				<div class="col-md mode">
 					<h2>FACTIONS</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elementum justo. Morbi in venenatis dui. Mauris quis efficitur orci, ut venenatis massa. Pellentesque gravida ante sit amet condimentum tristique. Suspendisse at gravida nunc, mattis sagittis velit. Pellentesque molestie mauris risus, et elementum metus mattis sit amet. Aliquam id ex ac augue tempor convallis. Nunc id consequat nibh. Suspendisse rhoncus nulla at nisl egestas vulputate vel vitae ex. In est nibh, tempus vitae ipsum vel, eleifend dictum diam. Ut dapibus massa sed turpis dictum pretium. Mauris tempus sapien sit amet turpis sodales, sit amet sollicitudin augue tincidunt. Donec ullamcorper suscipit laoreet.</p>
 				</div>
@@ -153,13 +154,13 @@
 		</section>
 		<!-- Start Third Gamemode -->
 		<div class="row fixed-width">
-			<div class="col mode">
+			<div class="col-md mode">
 				<h2>CREATIVE</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elementum justo. Morbi in venenatis dui. Mauris quis efficitur orci, ut venenatis massa. Pellentesque gravida ante sit amet condimentum tristique. Suspendisse at gravida nunc, mattis sagittis velit. Pellentesque molestie mauris risus, et elementum metus mattis sit amet. Aliquam id ex ac augue tempor convallis. Nunc id consequat nibh. Suspendisse rhoncus nulla at nisl egestas vulputate vel vitae ex. In est nibh, tempus vitae ipsum vel, eleifend dictum diam. Ut dapibus massa sed turpis dictum pretium. Mauris tempus sapien sit amet turpis sodales, sit amet sollicitudin augue tincidunt. Donec ullamcorper suscipit laoreet.</p>
 			</div>
 			<!-- Image Third Gamemode -->
-			<div class="col img">
-				<img width="480" src="https://via.placeholder.com/1920x1080">
+			<div class="col-md img">
+				<img class="res-img" src="https://via.placeholder.com/1920x1080">
 			</div>
 			<!-- End Image Third Gamemode -->
 		</div>
@@ -181,24 +182,24 @@
 		<hr>
 		<div class="row votelist">
 			<!-- First Vote Link -->
-			<div class="col voteblock">
-				<img height="110px;" src="https://www.planetminecraft.com/images/layout/planetminecraft_logo.png">
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="https://www.planetminecraft.com/images/layout/planetminecraft_logo.png">
 				<h2>PlanetMinecraft</h2>
 				<a href="#">Vote now</a>
 			</div>
 			<!-- End First Vote Link -->
 
 			<!-- Second Vote Link -->
-			<div class="col voteblock">
-				<img height="110px;" src="https://yt3.ggpht.com/-St0amFDpbC0/AAAAAAAAAAI/AAAAAAAAAAA/eZlt0WfF-F8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="https://yt3.ggpht.com/-St0amFDpbC0/AAAAAAAAAAI/AAAAAAAAAAA/eZlt0WfF-F8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
 				<h2>ServerPact</h2>
 				<a href="#">Vote now</a>
 			</div>
 			<!-- End Second Vote Link -->
 
 			<!-- Third Vote Link -->
-			<div class="col voteblock">
-				<img height="110px;" src="https://minecraft-server-list.com/minelog/wp-content/uploads/High-Res-App-Icon.jpg">
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="https://minecraft-server-list.com/minelog/wp-content/uploads/High-Res-App-Icon.jpg">
 				<h2>MinecraftMP</h2>
 				<a href="#">Vote now</a>
 			</div>
@@ -225,7 +226,7 @@
 		<!-- First Row Staff -->
 		<div class="row stafflist">
 			<!-- First Staff Member -->
-			<div class="col staffblock">
+			<div class="col-md staffblock">
 				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
 				<h2>Some dude</h2>
 				<p>Owner</p>
@@ -233,7 +234,7 @@
 			<!-- End First Staff Member -->
 
 			<!-- Second Staff Member -->
-			<div class="col staffblock">
+			<div class="col-md staffblock">
 				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
 				<h2>Some dude</h2>
 				<p>Co-Owner</p>
@@ -241,7 +242,7 @@
 			<!-- End Second Staf Member -->
 
 			<!-- Third Staff Member -->
-			<div class="col staffblock">
+			<div class="col-md staffblock">
 				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
 				<h2>Some dude</h2>
 				<p>Admin</p>
@@ -253,7 +254,7 @@
 		<!-- Second Row Staff Member -->
 		<div class="row stafflist">
 			<!-- Fourth Staff Member -->
-			<div class="col staffblock">
+			<div class="col-md staffblock">
 				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
 				<h2>Some dude</h2>
 				<p>Admin</p>
@@ -261,7 +262,7 @@
 			<!-- End Fourth Staff Member -->
 
 			<!-- Fifth Staff Member -->	
-			<div class="col staffblock">
+			<div class="col-md staffblock">
 				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
 				<h2>Some dude</h2>
 				<p>Moderator</p>
@@ -269,7 +270,7 @@
 			<!-- End Fifth Staff Member -->
 
 			<!-- Sixth Staff Member -->
-			<div class="col staffblock">
+			<div class="col-md staffblock">
 				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
 				<h2>Some dude</h2>
 				<p>Moderator</p>
@@ -313,6 +314,17 @@
 		});
 	</script>
 	<!-- End Smooth Scrolling Script -->
+
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+	</script>
 
 </body>
 </html>

@@ -17,7 +17,7 @@ html,body {
 }
 
 hr {
-	width: 420px;
+	max-width: 420px;
 	color: #718093;
 }
 
@@ -55,50 +55,65 @@ a:hover {
 
 /* Navbar */
 
-#navbar {
-	position: sticky;
-	top: 0;
-	z-index:1;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.topnav {
+	list-style-type: none;
     overflow: hidden;
     background-color: white;
+    box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.20);
+    transition: all .2s ease-in;
     font-weight: 700;
     text-transform: uppercase;
-    transition: all .2s ease-in;
-    box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.10);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-ul .max-width {
-	max-width: 1280px;
-	margin: 0 auto;
-	box-shadow: none;
-}
-
-li {
+.topnav a {
     float: left;
-}
-
-li a {
     display: block;
-    color: #34495e;
+    color: black;
     text-align: center;
     padding: 24px 26px;
-    font-size: 17px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-li a:hover {
+.topnav a:hover {
     color: #3498db;
-    transition: all .2s ease-in;
 }
 
-.active {
-    color: #3498db;
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div .max-width {
+    max-width: 60%;
+    margin: 0 auto;
+    box-shadow: none;
+  }
 }
 
 /* End Navbar */
@@ -106,19 +121,19 @@ li a:hover {
 #head {
 	background-image: url("https://i.imgur.com/9GkIEjN.png");
 	margin: 0;
-	padding: 200px;
+	padding: 222px 0px 222px 0px;
 	text-align: center;
 	color: white;
 }
 
 #head h1 {
-	font-size: 50px;
+	font-size: 55px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 #head h3 {
-	font-size: 20px;
+	font-size: 22px;
 	text-transform: uppercase;
 }
 
@@ -160,19 +175,19 @@ li a:hover {
 
 #banner {
 	background-image: url("https://i.imgur.com/XL2PAd3.png");
-	padding: 75px;
+	padding: 75px 0px 75px 0px;
 	text-align: center;
 }
 
 #banner2 {
 	background-image: url("https://i.imgur.com/8P27W9N.png");
-	padding: 75px;
+	padding: 75px 0px 75px 0px;
 	text-align: center;
 }
 
 #banner3 {
 	background-image: url("https://i.imgur.com/MljFIMA.png");
-	padding: 75px;
+	padding: 75px 0px 75px 0px;
 	text-align: center;
 }
 
@@ -248,6 +263,7 @@ li a:hover {
 #staff .staffblock {
 	transform: none;
 	transition: all .2s ease-in;
+	margin-bottom: 5px;
 }
 
 #staff .staffblock:hover {
@@ -295,13 +311,22 @@ li a:hover {
 #gamemodes .mode-inv {
 	margin: 15px;
 	text-align: right;
+	padding: 50px;
 	max-width: 1280px
 }
 
-#gamemodes .img {
-	margin: 15px;
-	padding: 50px;
-	max-width: 1280px
+@media screen and (min-width: 800px) {
+	#gamemodes .img {
+		margin: 15px;
+		padding: 50px;
+		max-width: 1280px
+	}
+}
+
+@media screen and (max-width: 799px) {
+	#gamemodes .img {
+		padding: 50px 0px 50px 0px;
+	}
 }
 
 #gamemodes .fixed-width {
@@ -380,4 +405,26 @@ footer {
 	padding: 0;
 	text-align: center;
 	transition: all .2s ease-in;
+}
+
+@media screen and (min-width: 800px) {
+	.res-img {
+		width: 480px;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.res-img {
+		width: 100%;	}
+}
+
+@media screen and (min-width: 800px) {
+	.res-img-sm {
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.res-img-sm {
+		width: 100%;	}
 }
