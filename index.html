@@ -10,10 +10,10 @@
 	if they're not showing, one of the links could be broken!
 
 	Need support?
-	Leave a comment on the SpigotMC page
+	PM me on SpigotMC (https://www.spigotmc.org/members/gewoonrick.31710/)
 
 	See anything broken?
-	Leave a comment on the SpigotMC page
+	PM me on SpigotMC (https://www.spigotmc.org/members/gewoonrick.31710/)
 
 -->
 <!DOCTYPE html>
@@ -51,7 +51,7 @@
 			  <a href="#gamemodes">Gamemodes</a>
 			  <a href="#vote">Vote</a>
 			  <a href="#staff">Staff</a>
-		  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 	</div>
 	<!-- End Navbar -->
@@ -294,36 +294,45 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Smooth Scrolling Script | Do not touch if you don't know what you're doing! -->
-	<script type="text/javascript">
-		window.scroll({
-		  top: 2500, //Can be edited 
-		  left: 0, //Can be edited, you should not.
-		  behavior: 'smooth' //Should not edit
-		});
+	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
 
-		window.scrollBy({ 
-		  top: -100, //Can be edited
-		  left: 0, //Can be edited, you should not.
-		  behavior: 'smooth' //Should not edit
-		});
- 
- 		//Should not edit
-		document.querySelector('.hello').scrollIntoView({ 
-		  behavior: 'smooth' 
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 100, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
 		});
 	</script>
 	<!-- End Smooth Scrolling Script -->
 
 	<script>
-	function myFunction() {
-	    var x = document.getElementById("myTopnav");
-	    if (x.className === "topnav") {
-	        x.className += " responsive";
-	    } else {
-	        x.className = "topnav";
-	    }
-	}
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
 	</script>
 
 </body>

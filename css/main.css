@@ -63,7 +63,8 @@ a:hover {
     transition: all .2s ease-in;
     font-weight: 700;
     text-transform: uppercase;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1;
 }
